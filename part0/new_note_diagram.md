@@ -30,6 +30,6 @@ participant server
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
     server->>browser: [{"content": "skibidi toilet", "date": "2025-19-09"}]
-    server->>browser: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    server->>browser: Redirect to https://studies.cs.helsinki.fi/exampleapp/notes
     deactivate server
 ```
